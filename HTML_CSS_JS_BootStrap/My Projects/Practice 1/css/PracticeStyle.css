@@ -1,0 +1,337 @@
+.wraper{
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 252px;
+	margin-right: 252px;
+	font-family: Corbel;
+}
+
+body{
+	background-color: #ABABAB;
+}
+
+.header {
+	height: 100%;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.header_content{
+	position: absolute;left: 300px;top: 60px;
+}
+
+.tab-content{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.rectangle{
+	height: 50px;
+	/* position: absolute;left: 10px; */
+	border-radius: 1px;
+	background-color: #DDDDDD;
+	box-shadow: 0px 0.5px 4px  ;
+}
+
+.tabs{
+	padding-top: 20px;
+}
+
+.tab{
+	display: none;
+}
+
+.tab-links{
+	   list-style-type:  none;
+	   font-family: HelvLight;
+	   font-size: 16px;
+	   text-decoration: none;
+	   /* padding-top: 15px;  */
+	   line-height: 48px;
+	   
+	   
+}
+/* .tab-links {
+	padding-left: 15px;
+	} */
+
+.tab-links li{
+	   float : left;
+	   vertical-align: middle;
+	   /* padding-right: 60x; */
+
+}
+
+.tab-links{
+	padding-left: 0px;
+}
+
+
+.pad{
+	   padding-right: 34px;
+	   padding-left: 34px; 
+	   border-right: 2px;
+	   
+	   border-right-style: dotted;
+	   border-right-color: #AEAEAE;
+}
+
+/* .nopadleft{
+ 	padding-left: 1px;
+ 	padd
+ }  */
+
+.nopadright{
+	padding-right: 20px;
+	border-right: none;
+}
+
+
+.tab-links a{
+	text-decoration: none;
+} 
+
+.tab-links li:hover {
+	padding-bottom: 1px;
+	padding-top: 1px;
+	background-color: #4ECBFF;
+	
+	/* border-color: black; */
+
+}
+
+.tab-content{	
+	/* margin-left: 270px; */
+	background-color: #EDEDED;
+}
+
+/* .leftmenu{
+	
+	float: left;
+} */
+
+/* .leftmenu img{
+	position: absolute;left: 30px;top: 22px;
+}  */
+.leftmenu h3{
+	margin-left: 15px;
+	padding-left: 30px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	background: url(../images/pencil.png) no-repeat left top;
+
+}
+.leftmenu ul{
+	list-style: none;
+	padding-bottom: 12px;
+	padding-top: 10px;
+	padding-right: 55px;
+	border: groove;
+}
+
+ul.bullet {
+  	list-style-image: url("../images/li.png");
+  }
+  .bullet li{
+  	padding-top:  5px;
+  }
+  .bullet li:hover{
+  /* 	text-decoration: underline; */
+  font-style: italic;
+  color: #3BA3DF;
+  	cursor:pointer; 
+  }
+
+
+ .clearfloat{
+	clear: both;
+
+}
+.tab-active{
+	/* margin-left: 210px;
+	margin-top: 90px;
+	*/
+	padding-left: 250px;
+	padding-right: 5px;
+	text-align: justify;
+	padding-bottom: 10px;
+	color: #113e5d
+	}
+
+.tab-active p {
+	font-size: 17px;
+}
+.tab-active ul{
+	font-size: 17px;
+}
+
+.background{
+	width: 1000px;
+	height: 2000px;
+	background-color: #FBFBFB;
+}
+
+.footer{
+	font-family: Corbel;
+	text-align: center;
+	padding-bottom: 10px;
+	background-color: #EDEDED;
+	/* padding-top: 100px; */
+	/* margin-top: 100px; */
+}
+.footer a{
+	text-decoration: none;
+	font-family: Corbel;
+	color:#3BA3DF;
+}
+
+.footer a:hover {
+	/* text-decoration: underline; */
+	font-style: italic;
+	/* font-size: 15px; */
+}
+
+.leftpanel{
+	width: 200px;
+	float:left;
+}
+
+.block{
+	float: left;
+	text-align: left;
+	border: solid;
+	border-style: groove;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-right: 10px;
+}
+
+.leftblock h3{
+	background: url("../images/pencil.png") no-repeat top left;
+	padding-left: 30px;
+	margin-left: 15px;
+
+}
+
+
+
+
+
+
+/* .leftmenu li{
+   	list-style-image: url(li.png);
+   background-image: url(C:\Users\Aabir Chakravorty\Documents\Learning HTML\My Projects\Practice 1\images\li.png) no-repeat left top;
+   height: 54px;
+   padding-left: 44px;
+   padding-top: 3px;
+   } */ 
+
+  
+
+ 
+
+
+
+
+
+
+
+/* .backrect{
+	width: 1000px;
+	height: 2000px;
+	background-color: #FFFFFF;
+	z-index: -1;
+} */
+/* .head2{
+	position: absolute;left: 650px;top: 60px;
+} */
+
+
+
+/* 
+inspirationalpixels.com
+
+.tabs{
+	width: 100%;
+	display: inline-block;
+}
+
+.tab-links:after{
+	display:block;
+	clear: both;
+	content: '';
+}
+.tab-links li{
+	margin: 0px 5px;
+	float:left;
+	list-style: none;
+}
+.tab-links a {
+	padding:9px 15px;
+	display:inline-block;
+	border-radius:3px 3px 0px 0px;
+	background:#FFFFFF;
+	font-size:16px;
+	font-weight:600;
+	color:#4c4c4c;
+	transition:all linear 0.15s;
+}
+.tab-links a:hover {
+	background: #9ACCE3;
+	text-decoration :none;
+}
+li.active a, li.active a:hover {
+	background: #2FB2EF;
+	color:#FFFFFF
+}
+.tab-content {
+	padding:15px;
+	border-radius: 3px; 
+	box-shadow: -1px 1px 1px rgba(0,0,0,0,15);
+	background: #2FB2EF;
+}
+.tab{
+	display: none;
+}
+.tab.active {
+	display: block;
+}
+ */
+
+
+ 
+/* 
+ w3 Schools.com
+
+ .tab-links{
+ 	list-style-type: none;
+ 	margin: 0;
+ 	padding: 0;
+ 	overflow: hidden;
+ 	background-color: #E1E1E1;
+ }
+li{
+	float: left;
+}
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover:not(.active){
+	background-color: #111;
+}
+.active{
+	background-color: #4CAF50;
+}
+
+h3 {
+	position: absolute;left: 5px;top: 300px;
+}
+.tab-content{
+	position: absolute;left: 300ps;
+}
+ */

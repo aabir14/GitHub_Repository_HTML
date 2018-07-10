@@ -1,0 +1,13 @@
+h1 {font-family: Segoe Script;position: absolute;left: 630px;top: 20px}
+h3{font-family: Segoe Script;/* position: absolute;left: 630px;top: 140px */}
+.rectangle{
+	width: 500px;
+	height: 500px;
+	background-color: #F4F4F4;
+	position: absolute;left: 500px;top: 120px;
+
+	   }
+.UserNamePass{position: absolute;left: 630px;top: 230px;}	
+.square{
+	
+}   

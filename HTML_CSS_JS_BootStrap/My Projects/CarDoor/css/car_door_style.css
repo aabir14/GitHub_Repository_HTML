@@ -1,0 +1,86 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Raleway', sans-serif;
+	font-family: 'Quicksand', sans-serif;
+	font-family: 'Poiret One', cursive;
+	font-family: 'Philosopher', sans-serif;
+	font-family: 'Metamorphous', cursive;
+	font-family: 'Josefin Slab', serif;
+	font-family: 'Antic', sans-serif;
+}
+.top_row{
+	background-color: #1e2228;
+	height: 40px;
+
+}
+.top_row ul{
+	list-style: none;
+	display: inline-flex;
+	padding: 0px;
+	margin: 0px;
+}
+.top_row li{
+	padding-left: 205px;
+	padding-top: 10px;
+
+}
+.top_row a{
+	text-decoration: none;
+	color: white;
+	padding-left: 5px;
+
+}
+.top_row i{
+	color: #ffd000;
+}
+.upper_body {
+	background-image: url(../images/banner.jpg)  ;
+	height: 1000px;
+	background-size: cover;
+	background-position: center center;
+
+}
+.upper_overlay{
+	background-color: rgba(0,0,0,0.6);
+	height: 1000px;
+}
+.header_row{
+	padding-left: 205px;
+	padding-right: 220px;
+	background-color: rgba(0,0,0,0.1);
+	height: 70px;
+	position: sticky;
+}
+.header{
+	padding-top: 10px;
+	float: left;
+}
+.menu{
+	float:right;
+	font-size: 1.4em;
+
+}
+.menu ul{
+	list-style: none;
+	display: inline-flex;
+	margin: 0px;
+}
+.menu li{
+	padding: 22px;
+	text-decoration: none;	
+}
+.menu a{
+	text-decoration: none;
+	color: white;
+}
+#default a{
+	color: #ffd000;
+}
+.menu li:hover{
+	background-color: rgba(255,255,255,0.12);
+	cursor: pointer;
+}
+.menu a:hover{
+	color: #ffd000;
+}
