@@ -3,53 +3,164 @@
 <html>
 <head>
 	<title>Cardoor - Car Rental</title>
-	<link rel="stylesheet" type="text/css" href="css/car_door_style.css">
+	
 	<link rel="stylesheet" type ="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type ="text/css" href="../CarDoor/css/n_style.css">
+	<link rel="stylesheet" type="text/css" href="css/car_door_style.css">
 	<link href="https://fonts.googleapis.com/css?family=Antic|Josefin+Slab:100,100i,300,300i,400,400i,600,600i,700,700i|Metamorphous|Philosopher:400,400i,700,700i|Poiret+One|Quicksand:300,400,500,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
-</head>
-<body>
-	<div class="wrapper">
-		<div class="top_row">
-			<ul>
-				<li><i class="fa fa-map-marker"></i><a href="#">  802, Nagpur, India</a></li>
-				<li><i class="fa fa-mobile"></i><a href="#">  +91 8600 14 8853</a></li>
-				<li><i class="fa fa-clock-o"></i><a href="#">  Mon-Fri 09.00 - 17.00</a></li>
-			</ul>
-		</div>
-		
-		<div class="upper_body">
-			<div class="upper_overlay">
-				
+	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai:100,200,300,400,500,700,800,900|Cairo:200,300,400,600,700,900|Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Exo:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Expletus+Sans:400,400i,500,500i,600,600i,700,700i|Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i|Josefin+Slab:100,100i,300,300i,400,400i,600,600i,700,700i|Montserrat+Alternates:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Sansita:400,400i,700,700i,800,800i,900,900i&amp;subset=arabic,cyrillic,cyrillic-ext,latin-ext,tamil,vietnamese" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Athiti:200,300,400,500,600,700" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<script src="../CarDoor/jquery/jquery.js"></script>
+	<script src="../CarDoor/js/jquery-ui.js"></script>
+	
+	<script>
+		$( function() {
+			$( "#pickup_date" ).datepicker();
+			$( "#return_date" ).datepicker();
 			
-			
-			<div class="header_row">
-				<div class="header">
-					<img src="images/logo.png">
+		} );
+	</script>
+
+
+	<script type="text/javascript">
+		// When the user scrolls the page, execute myFunction 
+		window.onscroll = function() {myFunction()};
+
+		// Get the header
+		var header = document.getElementById("header_row");
+
+		// Get the offset position of the navbar
+		var sticky = header.offsetTop;
+
+		// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+			if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			} else {
+				header.classList.remove("sticky");
+			}
+		}
+	</script>
+	<body>
+		<div class="wrapper">
+
+			<div class="top_row">
+				<ul>
+					<li><i class="fa fa-map-marker"></i><a href="#">  802, Nagpur, India</a></li>
+					<li><i class="fa fa-mobile"></i><a href="#">  +91 8600 14 8853</a></li>
+					<li><i class="fa fa-clock-o"></i><a href="#">  Mon-Fri 09.00 - 17.00</a></li>
+				</ul>
+			</div><!-- Top_row END   -->
+
+			<div class="upper_body">
+
+				<div class="upper_overlay">
+
+					<div class="header_row" id="header_row" >
+						<div class="header">
+							<img src="images/logo.png">
+						</div>
+
+						<div class="menu">
+							<ul>
+								<li class="home" id="default"><a href="#">Home</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Service</a></li>
+								<li><a href="#">Cars</a></li>
+								<li><a href="#">Page</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="upper_content">
+						<div class="pickup_form">
+							<form>
+								<select class="dropdown" >
+									<option >Select City</option >
+									<option>Mumbai</option>
+									<option>Nagpur</option>
+									<option>Pune</option>
+									<option>Delhi</option>
+									<option>Kanpur</option>
+									<option>Banglore</option>
+								</select>
+								<br>
+								<input type="text" id="pickup_date" class="datepicker" placeholder="Select Pick-Up Date" readonly="true">
+								<br>
+								<input type="text" id="return_date" class="datepicker" placeholder="Select Return Date" readonly="true">
+								<br>
+								<select class="dropdown">
+									<option >Select Car Type</option >
+									<option>Micro</option>
+									<option>Mini</option>
+									<option>Hatch Back</option>
+									<option>Sedan</option>
+									<option>Suv</option>
+									<option>Pick-up</option>
+								</select>
+							</form>
+
+						</div><!-- pickup_form END -->
+						<div class="right_heading">
+							<h1>BOOK A CAR TODAY!</h1>
+							<p>FOR AS LOW AS $10 A DAY PLUS 15% DISCOUNT FOR OUR RETURNING CUSTOMERS</p>
+						</div>
+
+					</div> <!-- upper_content -->
+
+				</div> <!-- Upper_overlay END -->
+
+			</div> <!-- Upper Body End  -->   
+
+
+
+			<div class="about_us">
+				<div class="heading_aboutus">
+					<h2>ABOUT US</h2>
+					<span class="title_line"><i class="fa fa-car"></i></span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+				<div class="aboutus_right">
+					<iframe width="557" height="357" src="https://player.vimeo.com/video/121982328?title=0&amp;byline=0&amp;portrait=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>			
+				</div>
+				<div class="aboutus_left">
+					<p>Lorem simply dummy is a texted of the printing costed and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi aliquid debitis optio praesentium, voluptate repellat accusantium deserunt eius.</p>
 				</div>
 
-				<div class="menu">
-					<ul>
-						<li class="home" id="default"><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Service</a></li>
-						<li><a href="#">Cars</a></li>
-						<li><a href="#">Page</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</div>
-
-				<div class="upper_content">
-
-					
-				</div>
 			</div>
-			<!-- <div class="banner">
-				<img src="images/banner.jpg">
-			</div> -->
-		</div>
-		</div>
-	</div>
 
-</body>
-</html>
+
+
+
+			<div class="section-title  text-center">
+				<h2>About us</h2>
+				<span class="title-line"><i class="fa fa-car"></i></span>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+
+
+
+
+			<div class="our_services clearfloat">
+				<div class="heading_ourservices" >
+					<h1>OUR SERVICES</h1>
+					<span class="title_line">
+						<hr>
+						<i class="fa fa-car"> </i>
+						<hr>
+					</span>
+
+				</div>
+
+			</div>
+
+		</div> <!-- wrapper End -->
+
+
+	</body>
+	</html>
