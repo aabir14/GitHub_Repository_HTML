@@ -18,8 +18,11 @@ body{
 	font-family: 'Arima Madurai', cursive;
 	font-family: 'Expletus Sans', cursive;
 	font-family: 'Sansita', sans-serif;
-	 /* ################    */
-	 font-family: 'Athiti', sans-serif;
+	/* ################    */
+	font-family: 'Athiti', sans-serif;
+}
+.text-center{
+	text-align: center!important;
 }
 body ::selection{
 	color: #ffd000;
@@ -127,90 +130,97 @@ body ::selection{
 }
 /* .upper_content select:focus{
 	border-color: #ffd000; */
-
 .datepicker{
-	width: 330px;
-	height: 30px;
-	padding-left: 10px;
-	margin-bottom: 20px;
-	background-color: white;
-	border-width: 1px;
-	border-style: solid;
-	border-color: #ffd000;
+		width: 330px;
+		height: 30px;
+		padding-left: 10px;
+		margin-bottom: 20px;
+		background-color: white;
+		border-width: 1px;
+		border-style: solid;
+		border-color: #ffd000;
 }
 .right_heading{
-	float: right;
-	text-align: right;
-	width: 600px;
-	font-family: 'Athiti', sans-serif;
-	padding-right: 220px;
-	padding-top: 200px;
+		float: right;
+		text-align: right;
+		width: 600px;
+		font-family: 'Athiti', sans-serif;
+		padding-right: 220px;
+		padding-top: 200px;
 }
 .right_heading h1{
-	color: #ffd000;
-	font-size:47px;
-	font-weight: b;
-	margin-top: 0px;
-	margin-bottom: 30px;
+		color: #ffd000;
+		font-size:47px;
+		font-weight: b;
+		margin-top: 0px;
+		margin-bottom: 30px;
 }
-.right_heading p{
-	color: white;
-	font-size: 20px;
+	.right_heading p{
+		color: white;
+		font-size: 20px;
 }
 
 .about_us{
-	margin-top: 90px;
-	margin-bottom: 80px;
-	height: 601px;
+		margin-top: 90px;
+		margin-bottom: 80px;
+		height: 601px;
 }
 .heading_aboutus h2{
-	text-align: center;
-	font-size: 40px;
-	font-weight: bold;
-	font-family: 'Sansita', sans-serif;
-	margin-top:  0px;
-	margin-bottom:
+		text-align: center;
+		font-size: 40px;
+		font-weight: bold;
+		font-family: 'Sansita', sans-serif;
+		margin-top:  0px;
+		margin-bottom:
 }
+
+
+
+
+
 
 
 .heading_aboutus {
-    font-size: 15px;
-    font-weight: 300;
-    margin-bottom: 80px;
-}
-.heading_aboutus.title_line {
-color: #ffd000;
-position: relative;
-}
-.heading_aboutus .title_line::before {
-    background-color: #333;
-    content: "";
-    height: 2px;
-    position: absolute;
-    left:  -60px;
-    top: 10px;
-    width: 50px;
-}
-.heading_aboutus .title_line::after {
-    background-color: #333;
-    content: "";
-    height: 2px;
-    position: absolute;
-    right: -60px;
-    top: 10px;
-    width: 50px;
+	font-size: 15px;
+	font-weight: 300;
+	margin-bottom: 80px;
+	text-align: center;
 }
 
-.heading_aboutus ::before{
-	
-    background-color: #333;
-    content: "";
-    height: 2px;
-    right: -60px;
-    position: absolute;
-    top: 10px;
-    width: 50px;
+.heading_aboutus h2 {
+	margin-bottom: 10px;
+	position: relative;
+	text-transform: uppercase;
 }
+
+.heading_aboutus .title_line {
+	color: #ffd000;
+	position: relative;
+}
+
+.heading_aboutus .title_line::before {
+	background-color: #333;
+	content: "";
+	height: 2px;
+	position: absolute;
+	right: -60px;
+	top: 10px;
+	width: 50px;
+}
+
+.heading_aboutus .title_line::after {
+	background-color: #333;
+	content: "";
+	height: 2px;
+	position: absolute;
+	left: -60px;
+	top: 10px;
+	width: 50px;
+}
+
+
+
+
 .heading_aboutus p{
 	text-align: center;
 	font-family: 'Philosopher', sans-serif;
@@ -238,8 +248,6 @@ position: relative;
 	text-align: center;
 	font-size: 40px;
 	font-weight: bold;
-	
-
 }
 .clearfloat{
 	clear: both;
@@ -257,39 +265,49 @@ position: relative;
 }
 
 
-.section-title {
-    font-size: 15px;
-    font-weight: 300;
-    margin-bottom: 80px;
+
+
+
+
+.heading_ourservices p{
+	font-family: 'Philosopher', sans-serif;
+	font-size: 1.2em;
 }
 
-.section-title h2 {
-    margin-bottom: 10px;
-    position: relative;
-    text-transform: uppercase;
+.heading_ourservices {
+	font-size: 15px;
+	font-weight: 300;
+	margin-bottom: 80px;
+	text-align: center;
 }
 
-.section-title .title-line {
-    color: #ffd000;
-    position: relative;
+.heading_ourservices h2 {
+	margin-bottom: 10px;
+	position: relative;
+	text-transform: uppercase;
 }
 
-.section-title .title-line::before {
-    background-color: #333;
-    content: "";
-    height: 2px;
-    position: absolute;
-    right: -60px;
-    top: 10px;
-    width: 50px;
+.heading_ourservices .title_line {
+	color: #ffd000;
+	position: relative;
 }
 
-.section-title .title-line::after {
-    background-color: #333;
-    content: "";
-    height: 2px;
-    left: -60px;
-    position: absolute;
-    top: 10px;
-    width: 50px;
+.heading_ourservices .title_line::before {
+	background-color: #333;
+	content: "";
+	height: 2px;
+	position: absolute;
+	right: -60px;
+	top: 10px;
+	width: 50px;
+}
+
+.heading_ourservices .title_line::after {
+	background-color: #333;
+	content: "";
+	height: 2px;
+	position: absolute;
+	left: -60px;
+	top: 10px;
+	width: 50px;
 }
