@@ -130,7 +130,7 @@ body ::selection{
 }
 /* .upper_content select:focus{
 	border-color: #ffd000; */
-.datepicker{
+	.datepicker{
 		width: 330px;
 		height: 30px;
 		padding-left: 10px;
@@ -139,175 +139,210 @@ body ::selection{
 		border-width: 1px;
 		border-style: solid;
 		border-color: #ffd000;
-}
-.right_heading{
+	}
+	.right_heading{
 		float: right;
 		text-align: right;
 		width: 600px;
 		font-family: 'Athiti', sans-serif;
 		padding-right: 220px;
 		padding-top: 200px;
-}
-.right_heading h1{
+	}
+	.right_heading h1{
 		color: #ffd000;
 		font-size:47px;
 		font-weight: b;
 		margin-top: 0px;
 		margin-bottom: 30px;
-}
+	}
 	.right_heading p{
 		color: white;
 		font-size: 20px;
-}
+	}
 
-.about_us{
+	.about_us{
 		margin-top: 90px;
 		margin-bottom: 80px;
 		height: 601px;
-}
-.heading_aboutus h2{
+	}
+	.heading_aboutus h2{
 		text-align: center;
 		font-size: 40px;
 		font-weight: bold;
 		font-family: 'Sansita', sans-serif;
 		margin-top:  0px;
 		margin-bottom:
+	}
+
+
+
+
+
+
+
+	.heading_aboutus {
+		font-size: 15px;
+		font-weight: 300;
+		margin-bottom: 80px;
+		text-align: center;
+	}
+
+	.heading_aboutus h2 {
+		margin-bottom: 10px;
+		position: relative;
+		text-transform: uppercase;
+	}
+
+	.heading_aboutus .title_line {
+		color: #ffd000;
+		position: relative;
+	}
+
+	.heading_aboutus .title_line::before {
+		background-color: #333;
+		content: "";
+		height: 2px;
+		position: absolute;
+		right: -60px;
+		top: 10px;
+		width: 50px;
+	}
+
+	.heading_aboutus .title_line::after {
+		background-color: #333;
+		content: "";
+		height: 2px;
+		position: absolute;
+		left: -60px;
+		top: 10px;
+		width: 50px;
+	}
+
+
+
+
+	.heading_aboutus p{
+		text-align: center;
+		font-family: 'Philosopher', sans-serif;
+		font-size: 1.2em;
+
+	}
+	.aboutus_right iframe{
+		float: right;
+		padding-right: 140px;
+	}
+	.aboutus_left{
+		float: left;
+		width: 600px;
+		padding-top: 30px;
+		padding-left: 140px;
+		font-family: 'Philosopher', sans-serif;
+		font-size: 1.5em;
+		font-weight: lighter;
+	}
+	.heading_ourservices{
+		margin-bottom: 100px;
+	}
+	.heading_ourservices h1{ 
+		font-family: 'Sansita', sans-serif;
+		text-align: center;
+		font-size: 40px;
+		font-weight: bold;
+	}
+	.clearfloat{
+		clear: both;
+	}
+	.our_services {
+		margin-top: 70px;
+	}
+
+	.title_line{
+		display: inline-flex;
+		text-align: center;
+	}
+	.title_line i{
+		text-align: center;
+	}
+
+	.heading_ourservices p{
+		font-family: 'Philosopher', sans-serif;
+		font-size: 1.2em;
+	}
+
+	.heading_ourservices {
+		font-size: 15px;
+		font-weight: 300;
+		margin-bottom: 80px;
+		text-align: center;
+	}
+
+	.heading_ourservices h2 {
+		margin-bottom: 10px;
+		position: relative;
+		text-transform: uppercase;
+	}
+
+	.heading_ourservices .title_line {
+		color: #ffd000;
+		position: relative;
+	}
+
+	.heading_ourservices .title_line::before {
+		background-color: #333;
+		content: "";
+		height: 2px;
+		position: absolute;
+		right: -60px;
+		top: 10px;
+		width: 50px;
+	}
+
+	.heading_ourservices .title_line::after {
+		background-color: #333;
+		content: "";
+		height: 2px;
+		position: absolute;
+		left: -60px;
+		top: 10px;
+		width: 50px;
+	}
+	.ourservices_grid{
+		margin-left: 200px;
+		text-align: center;
+		width: 1150px;
+		height: 800px;
+		/* margin: 100px; */
+	}
+
+	.box{
+		float: left;
+	/* border-width: 0.5px;
+	border-style: solid; */
+	padding: 25px;
+	margin: 15px;
+	width: 300px;
+	height: 300px;
+	box-shadow: 0px 0px 3px  #B3B3B3;
 }
-
-
-
-
-
-
-
-.heading_aboutus {
-	font-size: 15px;
-	font-weight: 300;
-	margin-bottom: 80px;
+.box i{
+	padding-top: 70px;
 	text-align: center;
+	font-size: 55px;
+	color: #ffd000; 
 }
-
-.heading_aboutus h2 {
-	margin-bottom: 10px;
-	position: relative;
-	text-transform: uppercase;
+.funfact_area{
+	background-image: url(../images/funfact-bg.jpg) ;
+	background-size: cover;
+	background-position: center;
+	height: 300px;
 }
-
-.heading_aboutus .title_line {
-	color: #ffd000;
-	position: relative;
-}
-
-.heading_aboutus .title_line::before {
-	background-color: #333;
-	content: "";
-	height: 2px;
-	position: absolute;
-	right: -60px;
-	top: 10px;
-	width: 50px;
-}
-
-.heading_aboutus .title_line::after {
-	background-color: #333;
-	content: "";
-	height: 2px;
-	position: absolute;
-	left: -60px;
-	top: 10px;
-	width: 50px;
-}
-
-
-
-
-.heading_aboutus p{
-	text-align: center;
-	font-family: 'Philosopher', sans-serif;
-	font-size: 1.2em;
-
-}
-.aboutus_right iframe{
-	float: right;
-	padding-right: 140px;
-}
-.aboutus_left{
-	float: left;
-	width: 600px;
-	padding-top: 30px;
-	padding-left: 140px;
-	font-family: 'Philosopher', sans-serif;
-	font-size: 1.5em;
-	font-weight: lighter;
-}
-.heading_ourservices{
-	margin-bottom: 100px;
-}
-.heading_ourservices h1{ 
-	font-family: 'Sansita', sans-serif;
-	text-align: center;
-	font-size: 40px;
-	font-weight: bold;
-}
-.clearfloat{
-	clear: both;
-}
-.our_services {
-	margin-top: 70px;
-}
-
-.title_line{
-	display: inline-flex;
-	text-align: center;
-}
-.title_line i{
-	text-align: center;
-}
-
-
-
-
-
-
-.heading_ourservices p{
-	font-family: 'Philosopher', sans-serif;
-	font-size: 1.2em;
-}
-
-.heading_ourservices {
-	font-size: 15px;
-	font-weight: 300;
-	margin-bottom: 80px;
-	text-align: center;
-}
-
-.heading_ourservices h2 {
-	margin-bottom: 10px;
-	position: relative;
-	text-transform: uppercase;
-}
-
-.heading_ourservices .title_line {
-	color: #ffd000;
-	position: relative;
-}
-
-.heading_ourservices .title_line::before {
-	background-color: #333;
-	content: "";
-	height: 2px;
-	position: absolute;
-	right: -60px;
-	top: 10px;
-	width: 50px;
-}
-
-.heading_ourservices .title_line::after {
-	background-color: #333;
-	content: "";
-	height: 2px;
-	position: absolute;
-	left: -60px;
-	top: 10px;
-	width: 50px;
+.funfact_overlay{
+	/* background-color: rgba(0,0,0,0.7); */
+	/* background-color:  radial-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)); */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.4+0,0.43+13,1+100 */
+background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.43) 13%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.43) 13%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.43) 13%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	height: 300px;
 }
