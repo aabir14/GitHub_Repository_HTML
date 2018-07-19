@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-div.a {
+    <style>
+/* div.a {
     position: relative;
     width: 400px;
     height: 200px;
@@ -26,19 +26,453 @@ div.c {
     width: 200px;
     height: 120px;
     border: 3px solid green;
-} 
+    }  */
+
+
+
+
+
+popucar-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 50px 0;
+    overflow: hidden;
+}
+.text-center {
+    text-align: center!important;
+}
+* {
+    outline: none!important;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333;
+    letter-spacing: 0.8px;
+}
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #868e96;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #868e96;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: "SFMono-Regular",Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+::selection {
+    background-color: #fff;
+    color: #fab702;           
+}
+
 </style>
 </head>
 <body>
-<h1>The right Property</h1>
 
-<div class="a">This div element has position: relative;
 
-<div class="b">This div element has position: absolute and right: 0.</div>
+<div class="choose-content-wrap">
+                        <!-- Choose Area Tab Menu -->
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#popular_cars" role="tab" aria-selected="true">popular Cars</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#newest_cars" role="tab" aria-selected="false">newest cars</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#office_map" role="tab" aria-selected="false">Our Office</a>
+                            </li>
+                        </ul>
+                        <!-- Choose Area Tab Menu -->
 
-<div class="c">This div element has position: absolute and is placed 150 pixels to the left of the right edge of the containing positioned element.</div>
+                        <!-- Choose Area Tab content -->
+                        <div class="tab-content" id="myTabContent">
+                            <!-- Popular Cars Tab Start -->
+                            <div class="tab-pane fade show active" id="popular_cars" role="tabpanel" aria-labelledby="home-tab">
+                                <!-- Popular Cars Content Wrapper Start -->
+                                <div class="popular-cars-wrap">
+                                    <!-- Filtering Menu -->
+                                    <div class="popucar-menu text-center">
+                                        <a href="#" data-filter="*" class="active">all</a>
+                                        <a href="#" data-filter=".con">Conver</a>
+                                        <a href="#" data-filter=".hat">Truck</a>
+                                        <a href="#" data-filter=".mpv">MPV</a>
+                                        <a href="#" data-filter=".sedan">Sedan</a>
+                                        <a href="#" data-filter=".suv">SUV</a>
+                                    </div>
 
-</div>
+                                    <!-- Filtering Menu -->
+
+                                    <!-- PopularCars Tab Content Start -->
+                                    <div class="row popular-car-gird" style="position: relative; height: 763.9px;">
+                                        <!-- Single Popular Car Start -->
+                                        <div class="col-lg-4 col-md-6 con suv mpv" style="position: absolute; left: 0px; top: 0px;">
+                                            <div class="single-popular-car">
+                                                <div class="p-car-thumbnails">
+                                                    <a class="car-hover" href="assets/img/car/car-1.jpg">
+                                                      <img src="assets/img/car/car-1.jpg" alt="JSOFT">
+                                                   </a>
+                                                </div>
+
+                                                <div class="p-car-content">
+                                                    <h3>
+                                                        <a href="#">Dodge Ram 1500</a>
+                                                        <span class="price"><i class="fa fa-tag"></i> $55/day</span>
+                                                    </h3>
+
+                                                    <h5>HATCHBACK</h5>
+
+                                                    <div class="p-car-feature">
+                                                        <a href="#">2017</a>
+                                                        <a href="#">manual</a>
+                                                        <a href="#">AIR CONDITION</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single Popular Car End -->
+
+                                        <!-- Single Popular Car Start -->
+                                        <div class="col-lg-4 col-md-6 hat sedan" style="position: absolute; left: 380px; top: 0px;">
+                                            <div class="single-popular-car">
+                                                <div class="p-car-thumbnails">
+                                                    <a class="car-hover" href="assets/img/car/car-2.jpg">
+                                                      <img src="assets/img/car/car-2.jpg" alt="JSOFT">
+                                                   </a>
+                                                </div>
+
+                                                <div class="p-car-content">
+                                                    <h3>
+                                                        <a href="#">Dodge Ram 1500</a>
+                                                        <span class="price"><i class="fa fa-tag"></i> $55/day</span>
+                                                    </h3>
+
+                                                    <h5>HATCHBACK</h5>
+
+                                                    <div class="p-car-feature">
+                                                        <a href="#">2017</a>
+                                                        <a href="#">manual</a>
+                                                        <a href="#">AIR CONDITION</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single Popular Car End -->
+
+                                        <!-- Single Popular Car Start -->
+                                        <div class="col-lg-4 col-md-6 suv con mpv" style="position: absolute; left: 760px; top: 0px;">
+                                            <div class="single-popular-car">
+                                                <div class="p-car-thumbnails">
+                                                    <a class="car-hover" href="assets/img/car/car-3.jpg">
+                                                      <img src="assets/img/car/car-3.jpg" alt="JSOFT">
+                                                   </a>
+                                                </div>
+
+                                                <div class="p-car-content">
+                                                    <h3>
+                                                        <a href="#">Dodge Ram 1500</a>
+                                                        <span class="price"><i class="fa fa-tag"></i> $55/day</span>
+                                                    </h3>
+
+                                                    <h5>HATCHBACK</h5>
+
+                                                    <div class="p-car-feature">
+                                                        <a href="#">2017</a>
+                                                        <a href="#">manual</a>
+                                                        <a href="#">AIR CONDITION</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single Popular Car End -->
+
+                                        <!-- Single Popular Car Start -->
+                                        <div class="col-lg-4 col-md-6 con hat" style="position: absolute; left: 0px; top: 381px;">
+                                            <div class="single-popular-car">
+                                                <div class="p-car-thumbnails">
+                                                    <a class="car-hover" href="assets/img/car/car-4.jpg">
+                                                      <img src="assets/img/car/car-4.jpg" alt="JSOFT">
+                                                   </a>
+                                                </div>
+
+                                                <div class="p-car-content">
+                                                    <h3>
+                                                        <a href="#">Dodge Ram 1500</a>
+                                                        <span class="price"><i class="fa fa-tag"></i> $55/day</span>
+                                                    </h3>
+
+                                                    <h5>HATCHBACK</h5>
+
+                                                    <div class="p-car-feature">
+                                                        <a href="#">2017</a>
+                                                        <a href="#">manual</a>
+                                                        <a href="#">AIR CONDITION</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single Popular Car End -->
+
+                                        <!-- Single Popular Car Start -->
+                                        <div class="col-lg-4 col-md-6 con sedan mpv" style="position: absolute; left: 380px; top: 381px;">
+                                            <div class="single-popular-car">
+                                                <div class="p-car-thumbnails">
+                                                    <a class="car-hover" href="assets/img/car/car-5.jpg">
+                                                      <img src="assets/img/car/car-5.jpg" alt="JSOFT">
+                                                   </a>
+                                                </div>
+
+                                                <div class="p-car-content">
+                                                    <h3>
+                                                        <a href="#">Dodge Ram 1500</a>
+                                                        <span class="price"><i class="fa fa-tag"></i> $55/day</span>
+                                                    </h3>
+
+                                                    <h5>HATCHBACK</h5>
+
+                                                    <div class="p-car-feature">
+                                                        <a href="#">2017</a>
+                                                        <a href="#">manual</a>
+                                                        <a href="#">AIR CONDITION</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single Popular Car End -->
+
+                                        <!-- Single Popular Car Start -->
+                                        <div class="col-lg-4 col-md-6 hat suv mpv" style="position: absolute; left: 760px; top: 381px;">
+                                            <div class="single-popular-car">
+                                                <div class="p-car-thumbnails">
+                                                    <a class="car-hover" href="assets/img/car/car-6.jpg">
+                                                      <img src="assets/img/car/car-6.jpg" alt="JSOFT">
+                                                   </a>
+                                                </div>
+
+                                                <div class="p-car-content">
+                                                    <h3>
+                                                        <a href="#">Dodge Ram 1500</a>
+                                                        <span class="price"><i class="fa fa-tag"></i> $55/day</span>
+                                                    </h3>
+
+                                                    <h5>HATCHBACK</h5>
+
+                                                    <div class="p-car-feature">
+                                                        <a href="#">2017</a>
+                                                        <a href="#">manual</a>
+                                                        <a href="#">AIR CONDITION</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single Popular Car End -->
+                                    </div>
+                                    <!-- PopularCars Tab Content End -->
+                                </div>
+                                <!-- Popular Cars Content Wrapper End -->
+                            </div>
+                            <!-- Popular Cars Tab End -->
+
+                            <!-- Newest Cars Tab Start -->
+                            <div class="tab-pane fade" id="newest_cars" role="tabpanel" aria-labelledby="profile-tab">
+                                <!-- Newest Cars Content Wrapper Start -->
+                                <div class="popular-cars-wrap">
+                                    <!-- Filtering Menu -->
+                                    <div class="newcar-menu text-center">
+                                        <a href="#" data-filter="*" class="active">all</a>
+                                        <a href="#" data-filter=".toyota">toyota</a>
+                                        <a href="#" data-filter=".bmw">bmw</a>
+                                        <a href="#" data-filter=".audi">audi</a>
+                                        <a href="#" data-filter=".tata">Tata</a>
+                                    </div>
+
+                                    <!-- Filtering Menu -->
+
+                                    <!-- NewestCars Tab Content Start -->
+                                    <div class="row newest-car-gird">
+                                        <!-- Single Newest Car Start -->
+                                        <div class="col-lg-4 col-md-6 tata audi">
+                                            <div class="single-new-car">
+                                                <div class="p-car-thumbnails">
+                                                    <a class="car-hover" href="assets/img/car/car-6.jpg">
+                                                      <img src="assets/img/car/car-6.jpg" alt="JSOFT">
+                                                   </a>
+                                                </div>
+
+                                                <div class="p-car-content">
+                                                    <h3>
+                                                        <a href="#">Toyota RAV4 EV</a>
+                                                        <span class="price"><i class="fa fa-tag"></i> $35/day</span>
+                                                    </h3>
+
+                                                    <h5>Toyota</h5>
+
+                                                    <div class="p-car-feature">
+                                                        <a href="#">2018</a>
+                                                        <a href="#">Auto</a>
+                                                        <a href="#">Non AIR CONDITION</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single Newest Car End -->
+
+                                        <!-- Single Newest Car Start -->
+                                        <div class="col-lg-4 col-md-6 bmw tata toyota">
+                                            <div class="single-new-car">
+                                                <div class="p-car-thumbnails">
+                                                    <a class="car-hover" href="assets/img/car/car-5.jpg">
+                                                      <img src="assets/img/car/car-5.jpg" alt="JSOFT">
+                                                   </a>
+                                                </div>
+
+                                                <div class="p-car-content">
+                                                    <h3>
+                                                        <a href="#">Toyota RAV4 EV</a>
+                                                        <span class="price"><i class="fa fa-tag"></i> $35/day</span>
+                                                    </h3>
+
+                                                    <h5>Toyota</h5>
+
+                                                    <div class="p-car-feature">
+                                                        <a href="#">2018</a>
+                                                        <a href="#">Auto</a>
+                                                        <a href="#">Non AIR CONDITION</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single Newest Car End -->
+
+                                        <!-- Single Newest Car Start -->
+                                        <div class="col-lg-4 col-md-6 bmw">
+                                            <div class="single-new-car">
+                                                <div class="p-car-thumbnails">
+                                                    <a class="car-hover" href="assets/img/car/car-4.jpg">
+                                                      <img src="assets/img/car/car-4.jpg" alt="JSOFT">
+                                                   </a>
+                                                </div>
+
+                                                <div class="p-car-content">
+                                                    <h3>
+                                                        <a href="#">Toyota RAV4 EV</a>
+                                                        <span class="price"><i class="fa fa-tag"></i> $35/day</span>
+                                                    </h3>
+
+                                                    <h5>Toyota</h5>
+
+                                                    <div class="p-car-feature">
+                                                        <a href="#">2018</a>
+                                                        <a href="#">Auto</a>
+                                                        <a href="#">Non AIR CONDITION</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Single Newest Car End -->
+                                    </div>
+                                    <!-- NewestCars Tab Content End -->
+                                </div>
+                                <!-- Newest Cars Content Wrapper End -->
+                            </div>
+                            <!-- Newest Cars Tab End -->
+
+                            <!-- Office Map Tab -->
+                            <div class="tab-pane fade" id="office_map" role="tabpanel" aria-labelledby="contact-tab">
+                                <div class="map-area">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.6538067244583!2d90.37092511435942!3d23.79533919297639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0cce3251ab1%3A0x7a2aa979862a9643!2sJSoft!5e0!3m2!1sen!2sbd!4v1516771096779"></iframe>
+                                </div>
+                            </div>
+                            <!-- Office Map Tab -->
+                        </div>
+                        <!-- Choose Area Tab content -->
+                    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- <h1>The right Property</h1>
+    
+    <div class="a">This div element has position: relative;
+    
+        <div class="b">This div element has position: absolute and right: 0.</div>
+    
+        <div class="c">This div element has position: absolute and is placed 150 pixels to the left of the right edge of the containing positioned element.</div>
+    
+    </div> -->
 
 </body>
 </html>

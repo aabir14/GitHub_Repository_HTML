@@ -20,6 +20,9 @@ body{
 	font-family: 'Sansita', sans-serif;
 	/* ################    */
 	font-family: 'Athiti', sans-serif;
+
+/* 	font-family: 'Merienda', cursive; */
+
 }
 .text-center{
 	text-align: center!important;
@@ -166,16 +169,16 @@ body ::selection{
 		height: 601px;
 	}
 	.heading_aboutus h2{
-		text-align: center;
 		font-size: 40px;
+		text-align: center;
 		font-weight: bold;
 		font-family: 'Sansita', sans-serif;
 		margin-top:  0px;
-		margin-bottom:
+		margin-bottom:;
+		margin-bottom: 10px;
+		position: relative;
+		text-transform: uppercase;
 	}
-
-
-
 
 
 
@@ -187,135 +190,133 @@ body ::selection{
 		text-align: center;
 	}
 
-	.heading_aboutus h2 {
-		margin-bottom: 10px;
-		position: relative;
-		text-transform: uppercase;
-	}
+	/* .heading_aboutus h2 {
+		
+		} */
 
-	.heading_aboutus .title_line {
-		color: #ffd000;
-		position: relative;
-	}
+		.heading_aboutus .title_line {
+			color: #ffd000;
+			position: relative;
+		}
 
-	.heading_aboutus .title_line::before {
-		background-color: #333;
-		content: "";
-		height: 2px;
-		position: absolute;
-		right: -60px;
-		top: 10px;
-		width: 50px;
-	}
+		.heading_aboutus .title_line::before {
+			background-color: #333;
+			content: "";
+			height: 2px;
+			position: absolute;
+			right: -60px;
+			top: 10px;
+			width: 50px;
+		}
 
-	.heading_aboutus .title_line::after {
-		background-color: #333;
-		content: "";
-		height: 2px;
-		position: absolute;
-		left: -60px;
-		top: 10px;
-		width: 50px;
-	}
+		.heading_aboutus .title_line::after {
+			background-color: #333;
+			content: "";
+			height: 2px;
+			position: absolute;
+			left: -60px;
+			top: 10px;
+			width: 50px;
+		}
 
 
 
 
-	.heading_aboutus p{
-		text-align: center;
-		font-family: 'Philosopher', sans-serif;
-		font-size: 1.2em;
+		.heading_aboutus p{
+			text-align: center;
+			font-family: 'Philosopher', sans-serif;
+			font-size: 1.2em;
 
-	}
-	.aboutus_right iframe{
-		float: right;
-		padding-right: 140px;
-	}
-	.aboutus_left{
-		float: left;
-		width: 600px;
-		padding-top: 30px;
-		padding-left: 140px;
-		font-family: 'Philosopher', sans-serif;
-		font-size: 1.5em;
-		font-weight: lighter;
-	}
-	.heading_ourservices{
-		margin-bottom: 100px;
-	}
-	.heading_ourservices h1{ 
-		font-family: 'Sansita', sans-serif;
-		text-align: center;
-		font-size: 40px;
-		font-weight: bold;
-	}
-	.clearfloat{
-		clear: both;
-	}
-	.our_services {
-		margin-top: 70px;
-	}
+		}
+		.aboutus_right iframe{
+			float: right;
+			padding-right: 140px;
+		}
+		.aboutus_left{
+			float: left;
+			width: 600px;
+			padding-top: 30px;
+			padding-left: 140px;
+			font-family: 'Philosopher', sans-serif;
+			font-size: 1.5em;
+			font-weight: lighter;
+		}
+		.heading_ourservices{
+			margin-bottom: 100px;
+		}
+		.heading_ourservices h1{ 
+			font-family: 'Sansita', sans-serif;
+			text-align: center;
+			font-size: 40px;
+			font-weight: bold;
+		}
+		.clearfloat{
+			clear: both;
+		}
+		.our_services {
+			margin-top: 70px;
+		}
 
-	.title_line{
-		display: inline-flex;
-		text-align: center;
-	}
-	.title_line i{
-		text-align: center;
-	}
+		.title_line{
+			display: inline-flex;
+			text-align: center;
+		}
+		.title_line i{
+			text-align: center;
+		}
 
-	.heading_ourservices p{
-		font-family: 'Philosopher', sans-serif;
-		font-size: 1.2em;
-	}
+		.heading_ourservices p{
+			font-family: 'Philosopher', sans-serif;
+			font-size: 1.2em;
+		}
 
-	.heading_ourservices {
-		font-size: 15px;
-		font-weight: 300;
-		margin-bottom: 80px;
-		text-align: center;
-	}
+		.heading_ourservices {
+			font-size: 15px;
+			font-weight: 300;
+			margin-bottom: 80px;
+			text-align: center;
+		}
 
-	.heading_ourservices h2 {
-		margin-bottom: 10px;
-		position: relative;
-		text-transform: uppercase;
-	}
+		.heading_ourservices h2 {
+			margin-bottom: 10px;
+			position: relative;
+			text-transform: uppercase;
+		}
 
-	.heading_ourservices .title_line {
-		color: #ffd000;
-		position: relative;
-	}
+		.heading_ourservices .title_line {
+			color: #ffd000;
+			position: relative;
+		}
 
-	.heading_ourservices .title_line::before {
-		background-color: #333;
-		content: "";
-		height: 2px;
-		position: absolute;
-		right: -60px;
-		top: 10px;
-		width: 50px;
-	}
+		.heading_ourservices .title_line::before {
+			background-color: #333;
+			content: "";
+			height: 2px;
+			position: absolute;
+			right: -60px;
+			top: 10px;
+			width: 50px;
+		}
 
-	.heading_ourservices .title_line::after {
-		background-color: #333;
-		content: "";
-		height: 2px;
-		position: absolute;
-		left: -60px;
-		top: 10px;
-		width: 50px;
-	}
-	.ourservices_grid{
-		margin-left: 200px;
-		text-align: center;
-		width: 1150px;
-		height: 800px;
-		/* margin: 100px; */
-	}
+		.heading_ourservices .title_line::after {
+			background-color: #333;
+			content: "";
+			height: 2px;
+			position: absolute;
+			left: -60px;
+			top: 10px;
+			width: 50px;
+		}
+		.ourservices_grid{
+			margin-left: 200px;
+			text-align: center;
+			width: 1150px;
+			height: 800px;
+			/* margin: 100px; */
+		}
 
-	.box{
-		float: left;
+		.box{
+			float: left;
 	/* border-width: 0.5px;
 	border-style: solid; */
 	padding: 25px;
@@ -340,9 +341,168 @@ body ::selection{
 	/* background-color: rgba(0,0,0,0.7); */
 	/* background-color:  radial-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)); */
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.4+0,0.43+13,1+100 */
-background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.43) 13%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.43) 13%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.43) 13%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.6+24,0.82+71,0.94+100 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.51+16,0.67+43,0.86+68 */
+	background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.51) 0%, rgba(0,0,0,0.51) 16%, rgba(0,0,0,0.67) 43%, rgba(0,0,0,0.86) 68%, rgba(0,0,0,0.86) 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.51) 0%,rgba(0,0,0,0.51) 16%,rgba(0,0,0,0.67) 43%,rgba(0,0,0,0.86) 68%,rgba(0,0,0,0.86) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, rgba(0,0,0,0.51) 0%,rgba(0,0,0,0.51) 16%,rgba(0,0,0,0.67) 43%,rgba(0,0,0,0.86) 68%,rgba(0,0,0,0.86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82000000', endColorstr='#db000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	height: 300px;
 }
+.funfact_content{
+	padding: 130px  100px 130px 300px;
+
+}
+.funfact_content i{
+	/* text-align: center; */
+	/* vertical-align: center; */
+	font-size: 50px;
+	color: #ffd000;
+
+	
+}
+.fact_text {
+	color: white;
+	display: inline;
+	font-size: 30px;
+	font-family: 'Merienda', cursive;
+	padding: 0px 30px 5px 30px;
+}
+.fun_fact{
+	float: left;
+	width: 370px;
+	height: 100px;
+	color: white;
+}
+.fun_fact p{
+	margin-top: 0px;
+	padding-left: 10px;
+}
+
+.choose_your_car{
+	margin-top: 100px;
+
+}
+.choosecar_heading{
+	font-family: 'Sansita', sans-serif;
+	text-align: center;
+	margin-bottom: 80px;
+	font-weight: bold;
+}
+
+.choosecar_heading h2 {
+	font-size: 40px;
+	margin-bottom: 10px;
+	position: relative;
+	text-transform: uppercase;
+}
+
+
+.choosecar_heading .title_line {
+	color: #ffd000;
+	position: relative;
+}
+
+.choosecar_heading .title_line::before {
+	background-color: #333;
+	content: "";
+	height: 2px;
+	position: absolute;
+	right: -60px;
+	top: 10px;
+	width: 50px;
+}
+
+.choosecar_heading .title_line::after {
+	background-color: #333;
+	content: "";
+	height: 2px;
+	position: absolute;
+	left: -60px;
+	top: 10px;
+	width: 50px;
+}
+.choosecar_heading p{
+	font-weight: lighter;
+}
+.choose_navbar{
+	width:1100px;
+	margin-left: 200px;
+	height: 38px;
+	border-bottom: solid;
+	border-color: #ffd000;
+	color: black;
+	font-size: 1.4em;
+	margin-bottom: 70px;
+}
+.choose_navbar ul{
+	padding-left: 0px;
+}
+.choose_navbar li{
+	list-style: none;
+	display: inline-block;
+
+}
+.choose_navbar a{
+	text-decoration: none;
+	padding: 2px 20px 2px 20px;
+
+}
+.choose_navbar a:hover{
+
+	padding: 2px 20px 2px 20px;
+	background-color:#F1F1F1;
+	transition: 0.3s;
+}
+.choose_default a{
+	padding: 2px 20px 2px 20px;
+	background-color:#ffd000;
+}
+.choose_default a:hover{
+	/* padding: 2px 20px 2px 20px; */
+	background-color:#FBDF62!important;
+}
+
+
+
+
+
+.cartype_navbar{
+	width:1100px;
+	margin-left: 200px;
+	color: black;
+}
+.cartype_navbar ul{
+	padding-left: 0px;
+}
+.cartype_navbar li{
+	list-style: none;
+	display: inline-block;
+	padding-top: 13px;
+	height: 38px;
+	width: 179px;
+	text-align: center;
+	vertical-align: center;
+	
+
+}
+.cartype_navbar a{
+	text-decoration: none;
+	
+	
+}
+.cartype_navbar li:hover{
+	
+	background-color:#F1F1F1;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.type_default{
+	
+	background-color:#ffd000;
+}
+.type_default:hover{
+	
+	background-color:#FFE15B!important;
+}
+
