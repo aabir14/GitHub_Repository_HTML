@@ -378,7 +378,7 @@ body ::selection{
 	margin-top: 0px;
 	padding-left: 10px;
 }
-
+/* ########################**********************  choose_your_car START   ************************####################  */
 .choose_your_car{
 	margin-top: 100px;
 
@@ -464,12 +464,13 @@ body ::selection{
 }
 
 
-
+/* ###################****************cartype_navbar  start ************##############################  */
 
 
 .cartype_navbar{
 	width:1100px;
 	margin-left: 200px;
+	margin-bottom: 50px;
 	color: black;
 }
 .cartype_navbar ul{
@@ -498,11 +499,45 @@ body ::selection{
 	cursor: pointer;
 }
 .type_default{
-	
 	background-color:#ffd000;
+	color: white;
 }
+
 .type_default:hover{
-	
 	background-color:#FFE15B!important;
 }
 
+.triangle{
+	height: 500px;
+}
+
+.popucar-menu a.active::after {
+    border-bottom: 10px solid #fff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    bottom: -2px;
+    content: "";
+    left: 50%;
+    margin-bottom: 1px;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+
+/* #################******************cartype_navbar END *****************************####################   */
+
+/* ###################****************choose_your_car   END ************##############################  */
+/* ###################****************cartype_grid START ************##############################  */
+.cartype_grid{
+	height: 500px;
+	width: 1100px;
+	margin-left: 200px;
+	margin-top: 75px;
+}
+.box_size{
+	float: left;
+	width: 350px;
+	height: 450px;
+	box-shadow: 0px 0px 3px  #BDBDBD;
+}
