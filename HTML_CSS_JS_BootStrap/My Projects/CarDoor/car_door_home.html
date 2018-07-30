@@ -7,11 +7,14 @@
 	<link rel="stylesheet" type ="text/css" href="css/font-awesome.css">
 	<link rel="stylesheet" type ="text/css" href="../CarDoor/css/n_style.css">
 	<link rel="stylesheet" type="text/css" href="css/car_door_style.css">
-	<link href="https://fonts.googleapis.com/css?family=Antic|Josefin+Slab:100,100i,300,300i,400,400i,600,600i,700,700i|Metamorphous|Philosopher:400,400i,700,700i|Poiret+One|Quicksand:300,400,500,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai:100,200,300,400,500,700,800,900|Cairo:200,300,400,600,700,900|Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Exo:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Expletus+Sans:400,400i,500,500i,600,600i,700,700i|Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i|Josefin+Slab:100,100i,300,300i,400,400i,600,600i,700,700i|Montserrat+Alternates:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Sansita:400,400i,700,700i,800,800i,900,900i&amp;subset=arabic,cyrillic,cyrillic-ext,latin-ext,tamil,vietnamese" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Athiti:200,300,400,500,600,700" rel="stylesheet">
+	<script src="js/carDoorJS.js"></script>
 
-	<link href="https://fonts.googleapis.com/css?family=Merienda:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Antic|Josefin+Slab:100,100i,300,300i,400,400i,600,600i,700,700i|Metamorphous|Philosopher:400,400i,700,700i|Poiret+One|Quicksand:300,400,500,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai:100,200,300,400,500,700,800,900|Cairo:200,300,400,600,700,900|Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Exo:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Expletus+Sans:400,400i,500,500i,600,600i,700,700i|Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i|Josefin+Slab:100,100i,300,300i,400,400i,600,600i,700,700i|Montserrat+Alternates:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Sansita:400,400i,700,700i,800,800i,900,900i&amp;subset=arabic,cyrillic,cyrillic-ext,latin-ext,tamil,vietnamese" rel="stylesheet"> -->
+<!-- 	<link href="https://fonts.googleapis.com/css?family=Athiti:200,300,400,500,600,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Merienda:400,700&amp;subset=latin-ext" rel="stylesheet">
+ --><!-- <link rel="stylesheet" type="text/css" href="css/browser_reset.css"> -->
 
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
 	<script src="../CarDoor/jquery/jquery.js"></script>
@@ -28,22 +31,22 @@
 
 	<script type="text/javascript">
 		// When the user scrolls the page, execute myFunction 
-		window.onscroll = function() {myFunction()};
+		//window.onscroll = function() {myFunction()};
 
 		// Get the header
-		var header = document.getElementById("header_row");
+		//var header = document.getElementById("header_row");
 
 		// Get the offset position of the navbar
-		var sticky = header.offsetTop;
+		//var sticky = header.offsetTop;
 
 		// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-		function myFunction() {
+		/*function myFunction() {
 			if (window.pageYOffset > sticky) {
 				header.classList.add("sticky");
 			} else {
 				header.classList.remove("sticky");
 			}
-		}
+		}*/
 	</script>
 	<body>
 		<div class="wrapper">
@@ -80,8 +83,10 @@
 
 					<div class="upper_content">
 						<div class="pickup_form">
-							<form>
-								<select class="dropdown" >
+							<form mame="pickup_form"  onsubmit="return validate_pickup_form();" method="post">
+								<!-- <label for="seletCity">Select City</label>
+								<br> -->
+								<select id="selectCity" class="dropdown" >
 									<option >Select City</option >
 									<option>Mumbai</option>
 									<option>Nagpur</option>
@@ -95,7 +100,7 @@
 								<br>
 								<input type="text" id="return_date" class="datepicker" placeholder="Select Return Date" readonly="true">
 								<br>
-								<select class="dropdown">
+								<select id="selectCar_type" class="dropdown">
 									<option >Select Car Type</option >
 									<option>Micro</option>
 									<option>Mini</option>
@@ -104,6 +109,10 @@
 									<option>Suv</option>
 									<option>Pick-up</option>
 								</select>
+							<!-- 	<input type="text" name="passengers" id="noOfPssengers">
+							<label for="noOfPssengers" id="lnoOfPssengers" style="color: red"></label>
+							<br> -->
+								<input type="submit" name="Submit" id="submit_pickup" value="Submit" >
 							</form>
 
 						</div><!-- pickup_form END -->
@@ -127,7 +136,7 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
 				<div class="aboutus_right">
-					<iframe width="557" height="357" src="https://player.vimeo.com/video/121982328?title=0&amp;byline=0&amp;portrait=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>			
+					<iframe width="557" height="357" src="https://player.vimeo.com/video/121982328?title=0&amp;byline=0&amp;portrait=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>         
 				</div>
 				<div class="aboutus_left">
 					<p>Lorem simply dummy is a texted of the printing costed and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
@@ -243,32 +252,70 @@
 					</ul>
 				</div> <!--   cartype_navbar  -->
 				<div class="cartype_grid clearfloat">
+
+
 					<div class="block1 box_size">
-						
+						<div class="car-type_img1 type-img"></div>
+						<div class="car_rent"> <i class="fa fa-tag"> </i> </div>
+						<div class="Car1_name name"><h3>Car Name</h3></div>
+						<div class="type clearfloat">SUV/Sedan/Hatchback</div>
+						<div class="model_year"><a>2018</a></div>
+						<div class="transmission"><a>Automatic</a></div>
+						<div class="air_condition"><a>Air Condition</a></div>
 					</div>
+					
 					<div class="block2 box_size">
-						
+						<div class="car-type_img2 type-img"></div>
+						<div class="Car2_name name"><h3>Car Name</h3></div>
+						<div class="type clearfloat">SUV/Sedan/Hatchback</div>
+						<div class="model_year"><a>2018</a></div>
+						<div class="transmission"><a>Automatic</a></div>
+						<div class="air_condition"><a>Air Condition</a></div>
 					</div>
+					
 					<div class="block3 box_size">
-						
+						<div class="car-type_img2 type-img"></div>
+						<div class="Car2_name name"><h3>Car Name</h3></div>
+						<div class="type clearfloat">SUV/Sedan/Hatchback</div>
+						<div class="model_year"><a>2018</a></div>
+						<div class="transmission"><a>Automatic</a></div>
+						<div class="air_condition"><a>Air Condition</a></div>
 					</div>
+					
 					<div class="block4 box_size">
-						
+						<div class="car-type_img2 type-img"></div>
+						<div class="Car2_name name"><h3>Car Name</h3></div>
+						<div class="type clearfloat">SUV/Sedan/Hatchback</div>
+						<div class="model_year"><a>2018</a></div>
+						<div class="transmission"><a>Automatic</a></div>
+						<div class="air_condition"><a>Air Condition</a></div>           
 					</div>
+					
 					<div class="block5 box_size">
-						
+						<div class="car-type_img2 type-img"></div>
+						<div class="Car2_name name"><h3>Car Name</h3></div>
+						<div class="type clearfloat">SUV/Sedan/Hatchback</div>
+						<div class="model_year"><a>2018</a></div>
+						<div class="transmission"><a>Automatic</a></div>
+						<div class="air_condition"><a>Air Condition</a></div>
 					</div>
+					
 					<div class="block6 box_size">
-						
+						<div class="car-type_img2 type-img"></div>
+						<div class="Car2_name name"><h3>Car Name</h3></div>
+						<div class="type clearfloat">SUV/Sedan/Hatchback</div>
+						<div class="model_year"><a>2018</a></div>
+						<div class="transmission"><a>Automatic</a></div>
+						<div class="air_condition"><a>Air Condition</a></div>
 					</div>
 
 				</div>
 
 			</div> <!-- choose_your_car END   -->
-		
 
 
-		
+
+
 
 		</div> <!-- wrapper End -->
 
